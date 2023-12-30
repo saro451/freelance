@@ -1,0 +1,38 @@
+stages:
+  - testing
+  - production
+
+testing:
+  stage: testing
+  script:
+    - mkdir -p /opt/Backend
+    - cd /opt/Backend
+    - rm -rf backend -f
+    - git clone $CI_REPOSITORY_URL
+    - cd backend && git checkout $CI_COMMIT_REF_NAME
+    - /root/.pyenv/versions/3.11.2/envs/backend/bin/pip install -r requirements.txt
+    - systemctl restart lettfaktura-backend.service
+  only:
+    - develop
+    - main
+    - /^feature\/[a-zA-Z]{3,}([-_+0-9a-zA-Z])*$/
+    - /^bugfix\/[a-zA-Z]{3,}([-_+0-9a-zA-Z])*$/
+    - /^hotfix\/[a-zA-Z]{3,}([-_+0-9a-zA-Z])*$/
+    - /^experiment\/[a-zA-Z]{3,}([-_+0-9a-zA-Z])*$/
+  tags:
+    - testing
+
+production:
+  stage: production
+  script:
+    - mkdir -p /opt/Backend
+    - cd /opt/Backend
+    - rm -rf backend -f
+    - git clone $CI_REPOSITORY_URL
+    - cd backend && git checkout $CI_COMMIT_REF_NAME
+    - /root/.pyenv/versions/3.11.2/envs/backend/bin/pip install -r requirements.txt
+    - systemctl restart lettfaktura-backend.service
+  only:
+    - main
+  tags:
+    - production

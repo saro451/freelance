@@ -1,0 +1,58 @@
+.back-warning-exp{
+    background: #fff;
+    width: 750px;
+    border-radius: 40px;
+    margin: 0 auto;
+    margin-top: 14.5em;
+    margin-bottom: 15em;      
+    padding-left: 10px;
+    padding-right: 10px;
+    /* transition: width 600ms ease-in-out; */
+}
+
+input{
+    border: 1px solid #ccc;
+}
+
+.background-img{
+    width: 100%;
+    height: inherit;
+    top: 0;
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 590px) {
+    .back-warning-exp{
+        background: #fff;
+        width: 93%;
+        border-radius: 40px;
+        margin: 0 auto;
+        margin-top: 6em;
+        margin-bottom: 18em;
+    }
+}
+
+@media only screen and (min-width: 591px) and (max-width: 767px) {
+    .back-warning-exp{
+        background: #fff;
+        width: 85%;
+        border-radius: 40px;
+        margin: 0 auto;
+        margin-top: 10em;
+        margin-bottom: 18em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .back-warning-exp{
+        background: #fff;
+        width: 70%;
+        border-radius: 40px;
+        margin: 0 auto;
+        margin-top: 12em;
+        margin-bottom: 18em;
+    }
+}

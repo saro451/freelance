@@ -1,0 +1,18 @@
+.madBackground{
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+}
+
+.input_placeholder{
+    color: var(--mantine-color-placeholder);
+}
+
+.modalclass::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .modalclass {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

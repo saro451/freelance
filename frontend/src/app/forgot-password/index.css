@@ -1,0 +1,93 @@
+.back-for-pass{
+    background: #fff;
+    width: 750px;
+    border-radius: 40px;
+    margin: 0 auto;
+    margin-top: 15.5rem;
+    margin-bottom: 25rem;      
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: width 600ms ease-in-out;
+}
+
+input{
+    border: 1px solid #ccc;
+}
+
+.background-img{
+    width: 100%;
+    height: inherit;
+    top: 0;
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 590px) {
+    .back-for-pass{
+        background: #fff;
+        width: 93%;
+        border-radius: 40px;
+        margin: 0 auto;
+        margin-top: 8em;
+        margin-bottom: 18em;
+    }
+}
+
+@media only screen and (min-width: 591px) and (max-width: 767px) {
+    .back-for-pass{
+        background: #fff;
+        width: 85%;
+        border-radius: 40px;
+        margin: 0 auto;
+        margin-top: 10em;
+        margin-bottom: 18em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .back-for-pass{
+        background: #fff;
+        width: 70%;
+        border-radius: 40px;
+        margin: 0 auto;
+        margin-top: 12em;
+        margin-bottom: 18em;
+    }
+}
+
+/* @media only screen and (min-width: 2460px) and (max-width: 3240px) {
+    .back-for-pass{
+        background: #fff;
+        width: 37%;
+        border-radius: 40px;
+        margin: 0 auto;
+        margin-top: 15.5em;
+        margin-bottom: 15em;      
+        padding-left: 10px;
+        padding-right: 10px;
+        transition: width 600ms ease-in-out;
+    }
+
+    .back-for-pass .forogto-passwordo-titleto{
+        font-size: 3.7rem;
+    }
+
+    .back-for-pass label{
+        font-size: 1.7rem;
+    }
+
+    .back-for-pass input[type=email],.back-for-pass input[type=password]{
+        height: 5.6rem;
+        font-size: 1.7rem;
+    }
+
+    
+    .back-for-pass button[type=submit]{
+        font-size: 1.7rem;
+        margin-top: 1.2em;
+        padding: 1.5rem 7em 1.5rem 7em;
+    }
+
+} */

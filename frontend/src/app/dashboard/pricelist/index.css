@@ -1,0 +1,389 @@
+.search-article {
+    border: 1px solid #ccc;
+}
+
+.call-pricelist-height{
+    max-height: 50px;
+    overflow-y: auto ;
+    white-space: nowrap !important;
+    scrollbar-width: none;
+    padding-right: 2px;
+}
+
+.search-box{
+    width: 90%;
+    padding: 2px 0px 2px 10px;
+    margin-left: 2px;
+    border: none !important;
+}
+
+.search-box:focus{
+    outline: none;
+}
+
+.prod-content{
+    display: flex;
+    place-content: space-between;
+}
+
+.grid-9{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    gap: 8px;
+}
+
+.menu-side-bar{
+    display: block;
+    width: 14%;
+}
+
+
+
+.main-price-list-container{
+    width: 82%;
+    padding-left: 0px;
+}
+
+
+.show-mb-dis{
+    display: block;
+}
+
+.mb-text{
+    display: block;
+}
+
+.psd-2{
+    margin-top: 0;
+}
+
+/* .btn-text-price{
+    width: inherit;
+} */
+
+.ssd-gsd{
+    display: block;
+}
+
+.ssd-gsd-2{
+    display: none;
+}
+
+.grid-9-ord{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    gap: 8px;
+}
+
+.scrollbarWidth{
+    overflow-y: auto;
+    scrollbar-width: none;
+    /* -webkit-scrollbar-width: none; */
+    
+}
+
+.scrollbarWidth::-webkit-scrollbar{
+    display: none;
+}
+
+.mobile-item-menu{
+    display: none;
+}
+
+.item-menu-pc{
+    display: block;
+}
+
+@media (max-width: 590px) {
+    .menu-side-bar{
+        display: none;
+        width: 0%;
+    }
+
+    .main-price-list-container{
+        width: 95%;
+        padding-left: 10px;
+    }
+
+    .show-mb-dis{
+        display: none;
+    }
+
+    .grid-9{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 8px;
+    }
+
+    .grid-9-ord{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 8px;
+    }
+
+    .search-box{
+        /* width: 100%; */
+        padding: 2px 0px 2px 10px;
+        margin-left: 2px;
+        border: none !important;
+
+    }
+
+    .search-article {
+        width: 100%;
+        border: 1px solid #ccc;
+    }
+
+    .prod-content{
+        display: block;
+        /* place-content: space-between; */
+    }
+
+    .mb-text{
+        display: none;
+    }
+
+    .psd-2{
+        margin-top: 8px;
+    }
+
+    .btn-text-price{
+        padding-left:20px;
+        padding-right: 20px;
+    }
+
+    .ssd-gsd{
+        display: none;
+    }
+
+    .ssd-gsd-2{
+        display: block;
+    }
+
+    .grid-2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+
+    .mobile-item-menu{
+        display: block;
+    }
+
+    .item-menu-pc{
+        display: none;
+    }
+
+    .call-pricelist-height{
+        max-height: auto;
+    }
+
+}
+
+@media only screen and (min-width: 591px) and (max-width: 767px) {
+    .menu-side-bar{
+        display: none;
+        width: 0%;
+    }
+
+    .main-price-list-container{
+        width: 98%;
+        padding-left: 10px;
+    }
+
+    .show-mb-dis{
+        display: none;
+    }
+
+    .grid-9{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 8px;
+    }
+
+    .grid-9-ord{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 8px;
+    }
+
+    .search-box{
+        width: 92%;
+        padding: 2px 0px 2px 10px;
+        margin-left: 2px;
+        border: none !important;
+
+    }
+
+    .search-article {
+        width: 100%;
+        border: 1px solid #ccc;
+    }
+
+    .prod-content{
+        display: block;
+        /* place-content: space-between; */
+    }
+
+    .mb-text{
+        display: none;
+    }
+
+    .psd-2{
+        margin-top: 8px;
+    }
+
+    .btn-text-price{
+        padding-left:40px;
+        padding-right: 40px;
+    }
+
+    .ssd-gsd{
+        display: none;
+    }
+
+    .ssd-gsd-2{
+        display: block;
+    }
+
+    
+    .grid-2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    .mobile-item-menu{
+        display: block;
+    }
+
+    .item-menu-pc{
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1260px) {
+    .menu-side-bar{
+        display: none;
+        width: 0%;
+    }
+
+    .main-price-list-container{
+        width: 98%;
+        padding-left: 15px;
+    }
+
+    .show-mb-dis{
+        display: none;
+    }
+
+    .grid-9{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 8px;
+    }
+
+    .grid-9-ord{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 8px;
+    }
+
+    .search-box{
+        /* width: 100%; */
+        padding: 2px 0px 2px 10px;
+        margin-left: 2px;
+        border: none !important;
+    }
+
+    .search-article {
+        width: 40vw;
+        border: 1px solid #ccc;
+    }
+
+    .prod-content{
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mb-text{
+        display: none;
+    }
+
+    .psd-2{
+        margin-top: 8px;
+    }
+
+    .btn-text-price{
+        padding-left:40px;
+        padding-right: 40px;
+    }
+
+    .ssd-gsd{
+        display: block;
+    }
+
+    .ssd-gsd-2{
+        display: none;
+    }
+    .mobile-item-menu{
+        display: block;
+    }
+
+    .item-menu-pc{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1261px) and (max-width: 1360px) {
+    .main-price-list-container{
+        width: 82%;
+        padding-left: 25px;
+        padding-right: 5px;
+    }
+
+    .search-box{
+        /* width: 80%; */
+        padding: 2px 0px 2px 10px;
+        margin-left: 2px;
+        border: none !important;
+
+    }
+
+    .search-article {
+        /* width: 100%; */
+        border: 1px solid #ccc;
+    }
+
+    .prod-content{
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mb-text{
+        display: block;
+    }
+
+    .psd-2{
+        margin-top: 8px;
+    }
+
+    .btn-text-price{
+        padding-left:20px;
+        padding-right: 20px;
+    }
+
+    .ssd-gsd{
+        display: block;
+    }
+
+    .ssd-gsd-2{
+        display: none;
+    }
+
+    .mobile-item-menu{
+        display: none;
+    }
+
+    .item-menu-pc{
+        display: block;
+    }
+}
