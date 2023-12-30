@@ -1,0 +1,99 @@
+.back-login{
+    background: #fff;
+    width: 750px;
+    border-radius: 40px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 18rem;
+    transition: width 600ms ease-in-out;
+}
+
+input{
+    border: 1px solid #ccc;
+}
+
+#remember{
+    cursor: pointer !important;
+}
+
+label[for="remember"]{
+    cursor: pointer;
+}
+
+.background-img{
+    width: 100%;
+    height: inherit;
+    top: 0;
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 590px) {
+    .back-login{
+        background: #fff;
+        width: 93%;
+        border-radius: 40px;
+        margin: 0 auto;
+        margin-top: 7rem;
+        margin-bottom: 18em;
+    }
+}
+
+@media only screen and (min-width: 591px) and (max-width: 767px) {
+    .back-login{
+        background: #fff;
+        width: 85%;
+        border-radius: 40px;
+        margin: 0 auto;
+        margin-top: 10em;
+        margin-bottom: 18em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .back-login{
+        background: #fff;
+        width: 70%;
+        border-radius: 40px;
+        margin: 0 auto;
+        margin-top: 10em;
+        margin-bottom: 18em;
+    }
+}
+
+/* @media only screen and (min-width: 2460px) and (max-width: 3240px) {
+    .back-login{
+        width: 37%;
+        margin: 0 auto;
+        margin-top: 16rem;
+        image-rendering: optimizeQuality;
+        transform-style: preserve-3d;
+    }
+
+    .back-login .login-in-in{
+        font-size: 4rem;
+    }
+
+    .back-login label{
+        font-size: 1.7rem;
+    }
+
+    .back-login input[type=email],.back-login input[type=password]{
+        height: 5.6rem;
+        font-size: 1.7rem;
+    }
+
+    .back-login .gotodifferntlink{
+        margin-top: 1.5em;
+        font-size: 1.7rem;
+    }
+
+    .back-login button[type=submit]{
+        font-size: 1.7rem;
+        margin-top: 2em;
+        padding: 1rem 7em 1rem 7em;
+    }
+    
+} */

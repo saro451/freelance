@@ -1,0 +1,136 @@
+.back-register{
+    padding-top: 10px;
+    background: #fff;
+    width: 650px;
+    border-radius: 40px;
+    padding-bottom:40px;
+    margin: 0 auto;
+    margin-top: 8em;
+    margin-bottom: 20rem;
+    transition: width 600ms ease-in-out;
+}
+
+.text-fields-register-un{
+    padding: 0 .75rem 0 .75rem;
+}
+
+/* .register-em-vh{
+    height: 140vh;
+} */
+
+input{
+    border: 1px solid #ccc;
+}
+
+/* .background-img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+} */
+
+.mb-btns{
+    display: flex;
+    gap: 1.25rem;
+}
+
+.tryagain-btn{
+    margin-top: 0px;
+}
+
+.one-reg{
+    display: block;
+}
+
+.m0b-reg{
+    display: none;
+}
+
+.tryagain-btn{
+    margin-top: 12px;
+    /* width: 50%; */
+}
+
+/* @media (max-height : 60vh) {
+    .one-reg{
+        display: none;
+    }
+    
+    .m0b-reg{
+        display: block;
+    }
+} */
+
+@media (max-width: 590px) {
+    .back-register{
+        background: #fff;
+        width: 95%;
+        border-radius: 40px;
+        margin: 0 auto;
+        margin-top: 4em;
+        margin-bottom: 18em;
+    }
+
+    .mb-btns{
+        display: block;
+        gap: 0;
+    }
+
+    .tryagain-btn{
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    .one-reg{
+        display: none;
+    }
+    
+    .m0b-reg{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 591px) and (max-width: 767px) {
+    .back-register{
+        background: #fff;
+        width: 85%;
+        border-radius: 40px;
+        margin: 0 auto;
+        margin-top: 10em;
+        margin-bottom: 18em;
+    }
+
+    .one-reg{
+        display: none;
+    }
+    
+    .m0b-reg{
+        display: block;
+    }
+/* 
+    .text-fields-register-un{
+        padding: 0 .75rem 0 .75rem;
+    } */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .back-register{
+        background: #fff;
+        width: 70%;
+        border-radius: 40px;
+        margin: 0 auto;
+        margin-top: 10em;
+        margin-bottom: 18em;
+    }
+
+    .one-reg{
+        display: none;
+    }
+    
+    .m0b-reg{
+        display: block;
+    }
+}

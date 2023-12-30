@@ -1,0 +1,23 @@
+.item {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    /* border: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
+     */
+     border: 1px solid #ccc;
+    padding: 2em;
+    /* background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-5)); */
+    margin-bottom: .75rem;
+    width: 50%;
+  }
+  
+  .itemDragging {
+    box-shadow: 6px 8px 12px #ccc;
+  }
+  
+  .symbol {
+    font-size: 30px;
+    font-weight: 700;
+    width: 60px;
+    height: 60px;
+  }

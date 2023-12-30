@@ -1,0 +1,73 @@
+[default]
+
+# App configuration
+FASTAPI_ENV = "local"
+APP_NAME = "Lettfaktura"
+APP_VERSION = "0.0.1"
+APP_DESCRIPTION = "Automate your billings"
+
+# Site configuration
+HOSTS__norway = ["localhost:8080", "online-old.123fakturere.no"]
+HOSTS__sweden = ["127.0.0.1:8080", "online-old.123fakturera.se"]
+
+# SMTP configurations
+SMTP__norway__server = "123fakturere.no"
+SMTP__sweden__server = "123fakturera.se"
+SMTP__norway__port = 587
+SMTP__sweden__port = 587
+
+# Email address to send from
+SMTP__norway__customer__address = "123fakturere <logginn@123fakturere.no>"
+SMTP__norway__customer__username = "logginn@123fakturere.no"
+SMTP__norway__admin__address = "123fakturere <webmailer@123fakturere.no>"
+SMTP__norway___admin__username = "webmailer@123fakturere.no"
+
+SMTP__sweden__customer__address = "123fakturera <loggain@123fakturera.se>"
+SMTP__sweden__customer__username = "loggain@123fakturera.se"
+SMTP__sweden__admin__address = "123fakturere <webmailer@123fakturera.se>"
+SMTP__sweden__admin__username = "webmailer@123fakturera.se"
+
+# Redis database
+REDIS_HOST = "localhost"
+REDIS_PORT = "6379"
+
+# Email addresses to send to
+EMAIL__norway__register = "registrering@123fakturere.no"
+EMAIL__norway__changes = "endring@123fakturere.no"
+EMAIL__norway__alerts = "alert@123fakturere.no"
+
+EMAIL__sweden_register = "registrering@123fakturere.no"
+EMAIL__sweden_changes = "andring@123fakturere.no"
+EMAIL__sweden_alerts = "alert@123fakturere.no"
+
+# Telegram configuration
+TELEGRAM_CHAT_ID = "-1001857020709"
+DEFAULT_THREAD = 1
+NEW_USER_THREAD = 3
+
+# Database configuration
+DB_HOST = "main-db.123fakturere.no"
+DB_PORT = 5432
+DB_USERNAME = "postgres"
+LANGUAGE_DB = "languages"
+
+# S3 storage configuration
+S3_API_URL = "storage.123fakturere.no"
+S3_ACCESS_KEY = "LOCALENV"
+S3_SECRET_KEY = "1ZP0c95cRddJEtwbmBewjGWUNWjwFQfZkNI6Raak"
+
+SENTRY_DSN = "https://8e8d9ad602bbf2d5d108f453fd612ebe@o4506066367283200.ingest.sentry.io/4506066423447552"
+
+[local]
+
+EMAIL__norway__register = "lettfaktura@infuse.com.np"
+EMAIL__sweden_register = "lettfaktura@infuse.com.np"
+
+
+[testing]
+
+S3_ACCESS_KEY = "APPTESTING"
+S3_SECRET_KEY = "2QUhGIlZDyDu8mL6dI1phovpM4UhOtsyulS5pqnJ"
+
+
+[production]

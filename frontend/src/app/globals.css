@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body{
+  background: #fff !important;
+  font-weight: 400;
+  font-family: sans-serif !important;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* scrollbar-width: none; */
+}
+
+.container {
+  max-width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 130vh;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+
+
+input{
+  background: none;
+}
+
+/* input::placeholder{
+  color: #ccc;
+} */
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Optionally, you can also hide scrollbar track and thumb for WebKit browsers */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Hide scrollbar for Firefox */
+
+footer{
+  background-size: cover;
+  background-image: url(https://assets.nicepagecdn.com/9a6d2659/5308532/images/bg-gradient-1.svg);
+  background-position: 50% 50%;
+}
+
+b{
+  font-weight: 700;
+} 
+
+.grid-2{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+@media only screen and (min-width: 2460px) and (max-width: 3240px) {
+.error-message-con{
+  /* font-size: 1.7rem; */
+}
+.main-error{
+  margin-top: 1.2rem;
+}
+
+/* .footer-space{
+  height: 30rem;
+} */
+}

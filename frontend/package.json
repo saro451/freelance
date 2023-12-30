@@ -1,0 +1,48 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NEXT_PUBLIC_ENVIRONMENT=development next dev",
+    "build": "cross-env NEXT_PUBLIC_ENVIRONMENT=production next build",
+    "start": "cross-env NEXT_PUBLIC_ENVIRONMENT=production next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@hello-pangea/dnd": "^16.3.0",
+    "@mantine/core": "^7.1.7",
+    "@mantine/hooks": "^7.1.7",
+    "@mantine/modals": "^7.1.7",
+    "@mantine/notifications": "^7.1.7",
+    "@tabler/icons-react": "^2.40.0",
+    "@types/node": "20.8.10",
+    "@types/react": "18.2.33",
+    "@types/react-dom": "18.2.14",
+    "autoprefixer": "10.4.16",
+    "axios": "^1.6.0",
+    "clsx": "^2.0.0",
+    "cookies-next": "^4.0.0",
+    "eslint": "8.52.0",
+    "eslint-config-next": "14.0.1",
+    "file-saver": "^2.0.5",
+    "gsap": "^3.12.2",
+    "lodash": "^4.17.21",
+    "next": "^14.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.11.0",
+    "react-infinite-scroll-component": "^6.1.0",
+    "tailwindcss": "3.3.5",
+    "typescript": "5.2.2",
+    "xss": "^1.0.14"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.6",
+    "@types/lodash": "^4.14.200",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.4.31",
+    "postcss-preset-mantine": "^1.9.0",
+    "postcss-simple-vars": "^7.0.1"
+  }
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="32" height="32" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve" preserveAspectRatio="none" viewbox="0 0 32 32">
+
+<g>
+	<defs>
+		<path id="57129427_SVGID_1__focus" d="M14,5c-1.657,0-3,1.343-3,3v48c0,1.657,1.343,3,3,3h36c1.657,0,3-1.343,3-3V21.821L43.289,5H14z"></path>
+	</defs>
+	<use xlink:href="#57129427_SVGID_1__focus" class="stshockcolor" style="fill: rgb(27, 222, 255); overflow: visible;" data-st="fill:#DEDCD9;;overflow:visible;"></use>
+	<clipPath id="57129427_SVGID_2__focus">
+		<use xlink:href="#57129427_SVGID_1__focus" style="overflow:visible;"></use>
+	</clipPath>
+	<polygon class="st0" points="53,59 11,59 11,4 53,28.249  " style="clip-path:url(#57129427_SVGID_2__focus);fill:#FFFFFF;fill-opacity:0.5;;"></polygon>
+</g>
+<path class="st2" d="M47,20H17v-2h30V20z M47,26H17v2h30V26z M47,34H17v2h30V34z M47,42H17v2h30V42z M47,50H17v2h30V50z" style="fill:#231F20;fill-opacity:0.3;;"></path>
+<g>
+	<path class="stshockcolor" d="M39.927,10.819l3.353-5.813L53,21.821l-11.973-6.904C39.592,14.089,39.099,12.255,39.927,10.819z" style="fill: rgb(27, 222, 255);" data-st="fill:#DEDCD9;;"></path>
+	<path class="st1" d="M39.927,10.819l3.353-5.813L53,21.821l-11.973-6.904C39.592,14.089,39.099,12.255,39.927,10.819z" style="opacity:0.5;fill:#FFFFFF;;"></path>
+</g>
+</svg>

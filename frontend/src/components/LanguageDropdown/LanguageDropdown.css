@@ -1,0 +1,31 @@
+.marginTop{
+  margin-top: -10px;
+}
+
+.call-dropdown{
+  width: auto;
+  background: #fff;
+  color: #000;
+  position: absolute;
+  zIndex: 100;
+  margin-left: -.75rem;
+}
+
+@media (max-width: 590px) {
+  .call-dropdown{
+    right: 1rem;
+  }
+}
+
+@media only screen and (min-width: 591px) and (max-width: 767px) {
+  .call-dropdown{
+    right: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1260px) {
+  .call-dropdown{
+    /* right: 1rem; */
+    margin-left: -.9rem;
+  }
+}

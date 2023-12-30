@@ -1,0 +1,42 @@
+stages:
+  - build
+  - testing
+
+build:
+  stage: build
+  script:
+    - cd /opt/Frontend/test
+    - rm -rf frontend -f
+    - git clone $CI_REPOSITORY_URL
+    - cd frontend && git checkout $CI_COMMIT_REF_NAME
+    - sudo npm install
+    - sudo npm run build
+  only:
+    - develop
+    - main
+    - /^feature\/[a-zA-Z]{3,}([-_+0-9a-zA-Z])*$/
+    - /^bugfix\/[a-zA-Z]{3,}([-_+0-9a-zA-Z])*$/
+    - /^hotfix\/[a-zA-Z]{3,}([-_+0-9a-zA-Z])*$/
+    - /^experiment\/[a-zA-Z]{3,}([-_+0-9a-zA-Z])*$/
+  tags:
+    - testing
+
+testing:
+  stage: testing
+  script:
+    - cd /opt/Frontend
+    - rm -rf frontend -f
+    - git clone $CI_REPOSITORY_URL
+    - cd frontend && git checkout $CI_COMMIT_REF_NAME
+    - sudo npm install
+    - sudo npm run build
+    - sudo systemctl restart lettfaktura-frontend.service
+  only:
+    - develop
+    - main
+    - /^feature\/[a-zA-Z]{3,}([-_+0-9a-zA-Z])*$/
+    - /^bugfix\/[a-zA-Z]{3,}([-_+0-9a-zA-Z])*$/
+    - /^hotfix\/[a-zA-Z]{3,}([-_+0-9a-zA-Z])*$/
+    - /^experiment\/[a-zA-Z]{3,}([-_+0-9a-zA-Z])*$/
+  tags:
+    - testing
